@@ -48,11 +48,11 @@
       "name": "Camera",
       "position": [
         0,
-        2,
+        3.4700231667829637,
         3
       ],
       "rotation": [
-        0.0004436887233141012,
+        0.00044368872331410124,
         0.9659425615285845,
         -0.25875089860082223,
         0.0016563336561801576
@@ -126,14 +126,14 @@
       "id": "9b340841-eeca-4ce4-9fc3-f8abc59ac056",
       "position": [
         -0.00027612134001731015,
-        0.3771868593234379,
-        -0.00788496185825915
+        0.37607420475380093,
+        0.01688979783048875
       ],
       "rotation": [
-        0.6772832365176295,
+        0.7227951259060984,
         0,
         0,
-        0.7357223780286997
+        0.6910623748739236
       ],
       "scale": [
         1,
@@ -149,11 +149,193 @@
           "type": "asset",
           "asset": "assets/AvatarFinal.glb"
         },
-        "animationClip": "",
+        "animationClip": "Stretching",
         "loop": true
       },
       "name": "AvatarFinal.glb",
-      "order": 4.248855129656975
+      "order": 6.009049594957666
+    },
+    "3a9d5bce-d963-484c-9306-e47882d50def": {
+      "id": "3a9d5bce-d963-484c-9306-e47882d50def",
+      "position": [
+        0,
+        0.23407674839952353,
+        1.847395969366033
+      ],
+      "rotation": [
+        0.015711327142926872,
+        0,
+        0,
+        0.9998765694821576
+      ],
+      "scale": [
+        1.6192943538689362,
+        1.1524508164990765,
+        0.2820463544285449
+      ],
+      "geometry": {
+        "type": "torus",
+        "radius": 0.5,
+        "tubeRadius": 0.2
+      },
+      "material": {
+        "type": "basic",
+        "color": "#e1b23c",
+        "roughness": 0.1,
+        "opacity": 1,
+        "emissiveIntensity": 0
+      },
+      "parentId": "ec4ebe25-6337-4947-a416-280094e4eb5d",
+      "components": {
+        "90437207-25fa-4ad2-bb5a-1bc26e5506a0": {
+          "id": "90437207-25fa-4ad2-bb5a-1bc26e5506a0",
+          "name": "position-animation",
+          "parameters": {
+            "fromZ": -0.317,
+            "fromY": 0,
+            "toY": 1.835,
+            "toZ": -0.317,
+            "reverse": true,
+            "autoFrom": false,
+            "duration": 10000
+          }
+        },
+        "ea469150-b22a-4313-b092-aa128ba2dd4d": {
+          "id": "ea469150-b22a-4313-b092-aa128ba2dd4d",
+          "name": "Custom Component",
+          "parameters": {}
+        }
+      },
+      "name": "Torus",
+      "order": 7.765321022655318
+    },
+    "156607d0-a577-418c-b49c-cd341336fefe": {
+      "id": "156607d0-a577-418c-b49c-cd341336fefe",
+      "position": [
+        0,
+        3.439129260169682,
+        0
+      ],
+      "rotation": [
+        -1.4873617824039266e-18,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.557368549042767,
+        2.332618057690155,
+        1.0000000532124818
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/Video Reel.mp4"
+        }
+      },
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Video",
+      "order": 1.8891180655678976,
+      "shadow": {
+        "receiveShadow": true,
+        "castShadow": true
+      },
+      "videoControls": {}
+    },
+    "ab7cfacd-0d52-4758-972c-50e86c05794f": {
+      "id": "ab7cfacd-0d52-4758-972c-50e86c05794f",
+      "position": [
+        0,
+        -0.32502225659135875,
+        0.02614080106349979
+      ],
+      "rotation": [
+        -1.2941583016848322e-18,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.6421087677766755,
+        0.3373572520076359,
+        0.9999999467875226
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "156607d0-a577-418c-b49c-cd341336fefe",
+      "components": {
+        "287f46db-e915-411d-a29a-6bbce61812c9": {
+          "id": "287f46db-e915-411d-a29a-6bbce61812c9",
+          "name": "Video Toggle Button",
+          "parameters": {
+            "videoEntity": {
+              "type": "entity",
+              "id": "156607d0-a577-418c-b49c-cd341336fefe"
+            }
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 36,
+        "background": "#305180",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "backgroundOpacity": 0,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "ignoreRaycast": true,
+        "margin": ""
+      },
+      "name": "Botón",
+      "order": 6.227005460939056
+    },
+    "9517b935-0dfd-4925-81f4-14bf7e655ced": {
+      "id": "9517b935-0dfd-4925-81f4-14bf7e655ced",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "ab7cfacd-0d52-4758-972c-50e86c05794f",
+      "components": {},
+      "name": "Texto",
+      "ui": {
+        "width": 80,
+        "height": 14,
+        "text": "Inicio",
+        "color": "#ffffff",
+        "fontSize": 15,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "order": 1.4319569062151696
     }
   },
   "spaces": {
