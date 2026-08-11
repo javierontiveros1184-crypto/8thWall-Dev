@@ -126,8 +126,8 @@
       "id": "9b340841-eeca-4ce4-9fc3-f8abc59ac056",
       "position": [
         -0.00027612134001731015,
-        0.37607420475380093,
-        0.01688979783048875
+        0.376074204753801,
+        0.016889797830488752
       ],
       "rotation": [
         0.7227951259060984,
@@ -143,17 +143,32 @@
       "geometry": null,
       "material": null,
       "parentId": "ec4ebe25-6337-4947-a416-280094e4eb5d",
-      "components": {},
+      "components": {
+        "f7333437-17fd-4059-9d5b-3bd2505ba27a": {
+          "id": "f7333437-17fd-4059-9d5b-3bd2505ba27a",
+          "name": "Toggle Animation",
+          "parameters": {
+            "target": {
+              "type": "entity",
+              "id": "9b340841-eeca-4ce4-9fc3-f8abc59ac056"
+            }
+          }
+        }
+      },
       "gltfModel": {
         "src": {
           "type": "asset",
           "asset": "assets/AvatarFinal.glb"
         },
         "animationClip": "Stretching",
-        "loop": true
+        "loop": true,
+        "reverse": true
       },
       "name": "AvatarFinal.glb",
-      "order": 6.009049594957666
+      "order": 10.30125320060551,
+      "shadow": {
+        "receiveShadow": true
+      }
     },
     "3a9d5bce-d963-484c-9306-e47882d50def": {
       "id": "3a9d5bce-d963-484c-9306-e47882d50def",
@@ -175,8 +190,8 @@
       ],
       "geometry": {
         "type": "torus",
-        "radius": 0.5,
-        "tubeRadius": 0.2
+        "radius": 0.6,
+        "tubeRadius": 0.1
       },
       "material": {
         "type": "basic",
@@ -199,11 +214,6 @@
             "autoFrom": false,
             "duration": 10000
           }
-        },
-        "ea469150-b22a-4313-b092-aa128ba2dd4d": {
-          "id": "ea469150-b22a-4313-b092-aa128ba2dd4d",
-          "name": "Custom Component",
-          "parameters": {}
         }
       },
       "name": "Torus",
@@ -213,19 +223,19 @@
       "id": "156607d0-a577-418c-b49c-cd341336fefe",
       "position": [
         0,
-        3.439129260169682,
-        0
+        0.963436400602415,
+        -0.026140802454516648
       ],
       "rotation": [
-        -1.4873617824039266e-18,
+        1.838336520556151e-18,
         0,
         0,
         1
       ],
       "scale": [
         1.557368549042767,
-        2.332618057690155,
-        1.0000000532124818
+        2.9642166992081305,
+        1.0000000532124802
       ],
       "geometry": {
         "type": "plane",
@@ -240,10 +250,21 @@
           "asset": "assets/Video Reel.mp4"
         }
       },
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {},
+      "parentId": "ab7cfacd-0d52-4758-972c-50e86c05794f",
+      "components": {
+        "d0e8ae72-1cd9-423b-ac43-d6f933bf21e2": {
+          "id": "d0e8ae72-1cd9-423b-ac43-d6f933bf21e2",
+          "name": "Play Video",
+          "parameters": {
+            "target": {
+              "type": "entity",
+              "id": "156607d0-a577-418c-b49c-cd341336fefe"
+            }
+          }
+        }
+      },
       "name": "Video",
-      "order": 1.8891180655678976,
+      "order": 3.167857017284674,
       "shadow": {
         "receiveShadow": true,
         "castShadow": true
@@ -254,23 +275,23 @@
       "id": "ab7cfacd-0d52-4758-972c-50e86c05794f",
       "position": [
         0,
-        -0.32502225659135875,
-        0.02614080106349979
+        -0.14639806567477157,
+        2.677103996671903
       ],
       "rotation": [
-        -1.2941583016848322e-18,
+        0.7227951259060984,
         0,
         0,
-        1
+        0.6910623748739236
       ],
       "scale": [
-        0.6421087677766755,
-        0.3373572520076359,
-        0.9999999467875226
+        1,
+        0.7869256179257395,
+        1.000000000000001
       ],
       "geometry": null,
       "material": null,
-      "parentId": "156607d0-a577-418c-b49c-cd341336fefe",
+      "parentId": "ec4ebe25-6337-4947-a416-280094e4eb5d",
       "components": {
         "287f46db-e915-411d-a29a-6bbce61812c9": {
           "id": "287f46db-e915-411d-a29a-6bbce61812c9",
@@ -299,7 +320,7 @@
         "margin": ""
       },
       "name": "Botón",
-      "order": 6.227005460939056
+      "order": 9.286359773363715
     },
     "9517b935-0dfd-4925-81f4-14bf7e655ced": {
       "id": "9517b935-0dfd-4925-81f4-14bf7e655ced",
@@ -325,17 +346,150 @@
       "components": {},
       "name": "Texto",
       "ui": {
-        "width": 80,
+        "width": 154,
         "height": 14,
-        "text": "Inicio",
+        "text": "Reproducir/Pausar",
         "color": "#ffffff",
         "fontSize": 15,
         "font": {
           "type": "font",
           "font": "Futura"
-        }
+        },
+        "verticalTextAlign": "center"
       },
       "order": 1.4319569062151696
+    },
+    "5e235aa7-9605-4b87-a4aa-baeb8552f73c": {
+      "id": "5e235aa7-9605-4b87-a4aa-baeb8552f73c",
+      "position": [
+        1.4,
+        -0.1541453830202062,
+        3.4322555496282443
+      ],
+      "rotation": [
+        0.7227951259060984,
+        0,
+        0,
+        0.6910623748739236
+      ],
+      "scale": [
+        1,
+        0.9999999999999996,
+        0.9999999999999996
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "ec4ebe25-6337-4947-a416-280094e4eb5d",
+      "components": {
+        "95bc1545-e524-4832-a460-e49b0d3dcbe9": {
+          "id": "95bc1545-e524-4832-a460-e49b0d3dcbe9",
+          "name": "abrir-link",
+          "parameters": {
+            "link": "https://www.instagram.com/totoslab/?wa_status_inline=true"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 100,
+        "image": {
+          "type": "asset",
+          "asset": "assets/IG_Logo.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "Imagen",
+      "order": 11.533495667525276
+    },
+    "7d3c3510-e0a5-4b4f-81ee-c15cee9c40d2": {
+      "id": "7d3c3510-e0a5-4b4f-81ee-c15cee9c40d2",
+      "position": [
+        1.4,
+        -0.1929843868549042,
+        4.297058528749589
+      ],
+      "rotation": [
+        0.7227951259060984,
+        0,
+        0,
+        0.6910623748739236
+      ],
+      "scale": [
+        0.9268351055040016,
+        0.9379508348826697,
+        0.9999999999999996
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "ec4ebe25-6337-4947-a416-280094e4eb5d",
+      "components": {
+        "c599861c-a9fd-41a8-994d-933e374d0d7d": {
+          "id": "c599861c-a9fd-41a8-994d-933e374d0d7d",
+          "name": "abrir-link",
+          "parameters": {
+            "link": "https://www.linkedin.com/in/javier-armando-ontiveros-leal-219077166?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 100,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Linkedin_Logo.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "Imagen",
+      "order": 11.765738134445042
+    },
+    "2d8d084c-53a0-4c79-af82-c51780dc60d9": {
+      "id": "2d8d084c-53a0-4c79-af82-c51780dc60d9",
+      "position": [
+        1.4,
+        -0.11877532048134794,
+        2.6446932427910648
+      ],
+      "rotation": [
+        0.7227951259060984,
+        0,
+        0,
+        0.6910623748739236
+      ],
+      "scale": [
+        1,
+        0.9999999999999996,
+        0.9999999999999996
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "ec4ebe25-6337-4947-a416-280094e4eb5d",
+      "components": {
+        "fa6298b6-afd3-484a-aac8-42e32c218734": {
+          "id": "fa6298b6-afd3-484a-aac8-42e32c218734",
+          "name": "abrir-link",
+          "parameters": {
+            "link": "https://www.canva.com/design/DAGNs_9a9O4/qANiAfFan9SXdOLTOXOjjg/view?utm_content=DAGNs_9a9O4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h38de60cbfe"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 100,
+        "image": {
+          "type": "asset",
+          "asset": "assets/Canva_Logo.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "Imagen",
+      "order": 11.997980601364809
     }
   },
   "spaces": {
