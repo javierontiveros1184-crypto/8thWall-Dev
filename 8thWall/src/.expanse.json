@@ -48,7 +48,7 @@
       "name": "Camera",
       "position": [
         0,
-        3.4700231667829637,
+        3.651966333023006,
         3
       ],
       "rotation": [
@@ -167,26 +167,26 @@
       "name": "AvatarFinal.glb",
       "order": 10.30125320060551,
       "shadow": {
-        "receiveShadow": true
+        "castShadow": true
       }
     },
     "3a9d5bce-d963-484c-9306-e47882d50def": {
       "id": "3a9d5bce-d963-484c-9306-e47882d50def",
       "position": [
         0,
-        0.23407674839952353,
-        1.847395969366033
+        0.23407674839952355,
+        1.8473959693660331
       ],
       "rotation": [
-        0.015711327142926872,
+        0.01571132714292687,
         0,
         0,
         0.9998765694821576
       ],
       "scale": [
         1.6192943538689362,
-        1.1524508164990765,
-        0.2820463544285449
+        1.1524508164990768,
+        0.282046354428545
       ],
       "geometry": {
         "type": "torus",
@@ -275,8 +275,8 @@
       "id": "ab7cfacd-0d52-4758-972c-50e86c05794f",
       "position": [
         0,
-        -0.14639806567477157,
-        2.677103996671903
+        -0.1463980656747716,
+        2.677103996671904
       ],
       "rotation": [
         0.7227951259060984,
@@ -286,7 +286,7 @@
       ],
       "scale": [
         1,
-        0.7869256179257395,
+        0.7869256179257396,
         1.000000000000001
       ],
       "geometry": null,
@@ -346,10 +346,10 @@
       "components": {},
       "name": "Texto",
       "ui": {
-        "width": 154,
-        "height": 14,
+        "width": 157,
+        "height": 95,
         "text": "Reproducir/Pausar",
-        "color": "#ffffff",
+        "color": "#e1b23c",
         "fontSize": 15,
         "font": {
           "type": "font",
@@ -400,7 +400,7 @@
         "backgroundOpacity": 1,
         "backgroundSize": "contain"
       },
-      "name": "Imagen",
+      "name": "Instagram",
       "order": 11.533495667525276
     },
     "7d3c3510-e0a5-4b4f-81ee-c15cee9c40d2": {
@@ -444,15 +444,15 @@
         "backgroundOpacity": 1,
         "backgroundSize": "contain"
       },
-      "name": "Imagen",
+      "name": "LinkedIn",
       "order": 11.765738134445042
     },
     "2d8d084c-53a0-4c79-af82-c51780dc60d9": {
       "id": "2d8d084c-53a0-4c79-af82-c51780dc60d9",
       "position": [
         1.4,
-        -0.11877532048134794,
-        2.6446932427910648
+        -0.11877532048134795,
+        2.644693242791065
       ],
       "rotation": [
         0.7227951259060984,
@@ -488,8 +488,42 @@
         "backgroundOpacity": 1,
         "backgroundSize": "contain"
       },
-      "name": "Imagen",
+      "name": "Canva",
       "order": 11.997980601364809
+    },
+    "2f4d2a80-dbe8-4d6f-8444-88259ddb328d": {
+      "id": "2f4d2a80-dbe8-4d6f-8444-88259ddb328d",
+      "position": [
+        0,
+        0.025833074307769995,
+        -0.020130161115393536
+      ],
+      "rotation": [
+        0.022438408329949092,
+        0,
+        0,
+        0.999748227221043
+      ],
+      "scale": [
+        3.9743466318744054,
+        1.9742317766064668,
+        1.5330894527623136
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#2b5b88",
+        "roughness": 0.5,
+        "emissiveIntensity": 0
+      },
+      "parentId": "ec4ebe25-6337-4947-a416-280094e4eb5d",
+      "components": {},
+      "name": "Plano",
+      "order": 13.090502637656677
     }
   },
   "spaces": {
