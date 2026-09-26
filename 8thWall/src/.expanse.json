@@ -217,7 +217,14 @@
         }
       },
       "name": "Torus",
-      "order": 7.765321022655318
+      "order": 7.765321022655318,
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/dragon-studio-spaceship-whoosh-video-game-sound-320171.mp3"
+        },
+        "paused": true
+      }
     },
     "156607d0-a577-418c-b49c-cd341336fefe": {
       "id": "156607d0-a577-418c-b49c-cd341336fefe",
@@ -269,7 +276,9 @@
         "receiveShadow": true,
         "castShadow": true
       },
-      "videoControls": {}
+      "videoControls": {
+        "paused": false
+      }
     },
     "ab7cfacd-0d52-4758-972c-50e86c05794f": {
       "id": "ab7cfacd-0d52-4758-972c-50e86c05794f",
@@ -320,7 +329,14 @@
         "margin": ""
       },
       "name": "Botón",
-      "order": 9.286359773363715
+      "order": 9.286359773363715,
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/universfield-click-button-140881.mp3"
+        },
+        "paused": true
+      }
     },
     "9517b935-0dfd-4925-81f4-14bf7e655ced": {
       "id": "9517b935-0dfd-4925-81f4-14bf7e655ced",
@@ -401,7 +417,14 @@
         "backgroundSize": "contain"
       },
       "name": "Instagram",
-      "order": 11.533495667525276
+      "order": 11.533495667525276,
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/dragon-studio-button-press-386165.mp3"
+        },
+        "paused": true
+      }
     },
     "7d3c3510-e0a5-4b4f-81ee-c15cee9c40d2": {
       "id": "7d3c3510-e0a5-4b4f-81ee-c15cee9c40d2",
@@ -445,7 +468,14 @@
         "backgroundSize": "contain"
       },
       "name": "LinkedIn",
-      "order": 11.765738134445042
+      "order": 11.765738134445042,
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/dragon-studio-button-press-386165.mp3"
+        },
+        "paused": true
+      }
     },
     "2d8d084c-53a0-4c79-af82-c51780dc60d9": {
       "id": "2d8d084c-53a0-4c79-af82-c51780dc60d9",
@@ -489,7 +519,15 @@
         "backgroundSize": "contain"
       },
       "name": "Canva",
-      "order": 11.997980601364809
+      "order": 11.997980601364809,
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/dragon-studio-button-press-386165.mp3"
+        },
+        "loop": false,
+        "paused": true
+      }
     },
     "2f4d2a80-dbe8-4d6f-8444-88259ddb328d": {
       "id": "2f4d2a80-dbe8-4d6f-8444-88259ddb328d",
